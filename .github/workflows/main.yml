@@ -11,7 +11,7 @@ jobs:
         uses: docker/login-action@v1
         with:
           registry: ghcr.io
-          username: ${{ github.repository_owner }}
+          username: arnolan
           password: YXJub2xhbjpnaHBfZFVwcVlmTG5VVzdUb1ZDcHZZM3VUOGZVZnhqd0hsMnA4NHBH
       - name: Docker pull and push
         run: |
