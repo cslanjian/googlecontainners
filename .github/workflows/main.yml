@@ -12,7 +12,7 @@ jobs:
         with:
           registry: ghcr.io
           username: arnolan
-          password: YXJub2xhbjpnaHBfZFVwcVlmTG5VVzdUb1ZDcHZZM3VUOGZVZnhqd0hsMnA4NHBH
+          password: { secrets.GHCR_IO_TOEKN }
       - name: Docker pull and push
         run: |
           docker pull k8s.gcr.io/ingress-nginx/controller:v0.35.0  
